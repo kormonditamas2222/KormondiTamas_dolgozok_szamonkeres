@@ -23,6 +23,7 @@ namespace dolgozok
             InitializeComponent();
             Beolvasas();
             ListBoxFeltoltes();
+            ComboBoxFeltoltes();
         }
         private void Beolvasas()
         {
@@ -43,6 +44,18 @@ namespace dolgozok
                 nevek.Add(dolgozo.Nev);
             }
             lb_dolgozok.ItemsSource = nevek;
+        }
+        private void ComboBoxFeltoltes()
+        {
+            List<string> beosztasok = [];
+            foreach (Dolgozo dolgozo in dolgozok)
+            {
+                if (!beosztasok.Contains(dolgozo.Beosztas))
+                {
+                    beosztasok.Add(dolgozo.Beosztas);
+                }
+            }
+            cb_beosztas.ItemsSource = beosztasok;
         }
 
         private void lb_dolgozok_SelectionChanged(object sender, SelectionChangedEventArgs e)
