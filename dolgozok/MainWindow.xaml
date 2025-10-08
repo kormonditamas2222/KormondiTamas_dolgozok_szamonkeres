@@ -14,7 +14,7 @@
             <ComboBox x:Name="cb_beosztas" Width="166"/>
             <TextBox x:Name="tb_email" TextWrapping="Wrap" Text="Email:" Width="120"/>
             <TextBox x:Name="tb_telefon" TextWrapping="Wrap" Text="Telefonszám:" Width="120"/>
-            <TextBox x:Name="tb_fizetes" TextWrapping="Wrap" Text="Fizetés" Width="120"/>
+            <TextBox x:Name="tb_fizetes" TextWrapping="Wrap" Text="Fizetés:" Width="120"/>
             <RadioButton x:Name="rb_ferfi" Content="Férfi" GroupName="nem"/>
             <RadioButton x:Name="rb_no" Content="Nő" GroupName="nem"/>
             <Button x:Name="btn_be" Content="Adatfelvétel"/>
