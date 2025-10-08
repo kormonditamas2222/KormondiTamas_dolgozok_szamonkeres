@@ -17,7 +17,7 @@
             <TextBox x:Name="tb_fizetes" TextWrapping="Wrap" Text="Fizetés:" Width="120"/>
             <RadioButton x:Name="rb_ferfi" Content="Férfi" GroupName="nem"/>
             <RadioButton x:Name="rb_no" Content="Nő" GroupName="nem"/>
-            <Button x:Name="btn_be" Content="Adatfelvétel"/>
+            <Button x:Name="btn_be" Content="Adatfelvétel" Click="btn_be_Click"/>
         </StackPanel>
 
     </Grid>
