@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ListBox x:Name="lb_dolgozok" Margin="0,0,535,102"/>
-        <Label x:Name="lbl_dolgozonev" Content="Kiválasztott név helye" HorizontalAlignment="Left" Margin="0,337,0,0" VerticalAlignment="Top" Height="38" Width="204"/>
+        <ListBox x:Name="lb_dolgozok" Margin="0,0,535,102" SelectionChanged="lb_dolgozok_SelectionChanged"/>
+        <Label x:Name="lbl_dolgozonev" Content="Kiválasztott név helye" HorizontalAlignment="Center" Margin="0,337,0,0" VerticalAlignment="Top" Height="38" Width="800"/>
         <StackPanel Margin="327,0,0,0" HorizontalAlignment="Left" Width="358" VerticalAlignment="Top" Height="332">
             <TextBox x:Name="tb_nev" TextWrapping="Wrap" Text="Név:" Width="120"/>
             <ComboBox x:Name="cb_beosztas" Width="166"/>
