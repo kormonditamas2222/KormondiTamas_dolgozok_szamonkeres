@@ -7,6 +7,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <ListBox x:Name="lb_dolgozok" Margin="0,0,535,102"/>
+        <Label x:Name="lbl_dolgozonev" Content="Kiválasztott név helye" HorizontalAlignment="Left" Margin="0,337,0,0" VerticalAlignment="Top" Height="38" Width="204"/>
+        <StackPanel Margin="327,0,0,0" HorizontalAlignment="Left" Width="358" VerticalAlignment="Top" Height="332">
+            <TextBox x:Name="tb_nev" TextWrapping="Wrap" Text="Név:" Width="120"/>
+            <ComboBox x:Name="cb_beosztas" Width="166"/>
+            <TextBox x:Name="tb_email" TextWrapping="Wrap" Text="Email:" Width="120"/>
+            <TextBox x:Name="tb_telefon" TextWrapping="Wrap" Text="Telefonszám:" Width="120"/>
+            <TextBox x:Name="tb_fizetes" TextWrapping="Wrap" Text="Fizetés" Width="120"/>
+            <RadioButton x:Name="rb_ferfi" Content="Férfi" GroupName="nem"/>
+            <RadioButton x:Name="rb_no" Content="Nő" GroupName="nem"/>
+            <Button x:Name="btn_be" Content="Adatfelvétel"/>
+        </StackPanel>
 
     </Grid>
 </Window>
